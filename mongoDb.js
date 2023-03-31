@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/Lab5')
+await mongoose.connect('mongodb://127.0.0.1:27017/Lab5')
   .then(() => console.log('Connected!'));
 
     const Schema = mongoose.Schema;
@@ -29,5 +29,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/Lab5')
     // })
     // .then((data) =>{console.log('Them thanh cong ', data)})
     // .catch((err) =>{console.log('Loi ', err)})
+
+    module.exports = UserModel;
 
   
